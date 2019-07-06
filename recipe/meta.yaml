@@ -1,4 +1,4 @@
-{% set version = '0.19-2' %}
+{% set version = '0.19-3' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/coda_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/coda/coda_{{ version }}.tar.gz
-  sha256: 678a7e6a87a2723089daeb780ea37ac3d4319b37eabe26928ea3fa9c9b1eda0d
+  sha256: d3df1fc848bcf1af8fae13d61eeab60e99a3d4b4db384bec4326f909f502c5d6
 
 build:
   merge_build_host: True  # [win]
@@ -49,8 +49,8 @@ extra:
     - conda-forge/r
 
 # Package: coda
-# Version: 0.19-2
-# Date: 2018-10-08
+# Version: 0.19-3
+# Date: 2019-07-05
 # Title: Output Analysis and Diagnostics for MCMC
 # Authors@R: c(person("Martyn", "Plummer", role=c("aut","cre","trl"), email="martyn.plummer@gmail.com"), person("Nicky", "Best", role="aut"), person("Kate", "Cowles", role="aut"), person("Karen", "Vines", role="aut"), person("Deepayan", "Sarkar", role="aut"), person("Douglas", "Bates", role="aut"), person("Russell", "Almond", role="aut"), person("Arni", "Magnusson", role="aut"))
 # Depends: R (>= 2.14.0)
@@ -58,8 +58,8 @@ extra:
 # Description: Provides functions for summarizing and plotting the output from Markov Chain Monte Carlo (MCMC) simulations, as well as diagnostic tests of convergence to the equilibrium distribution of the Markov chain.
 # License: GPL (>= 2)
 # NeedsCompilation: no
-# Packaged: 2018-10-08 10:16:54 UTC; martyn
+# Packaged: 2019-07-05 12:32:44 UTC; martyn
 # Author: Martyn Plummer [aut, cre, trl], Nicky Best [aut], Kate Cowles [aut], Karen Vines [aut], Deepayan Sarkar [aut], Douglas Bates [aut], Russell Almond [aut], Arni Magnusson [aut]
 # Maintainer: Martyn Plummer <martyn.plummer@gmail.com>
 # Repository: CRAN
-# Date/Publication: 2018-10-08 12:00:15 UTC
+# Date/Publication: 2019-07-05 13:30:03 UTC
