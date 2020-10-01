@@ -1,4 +1,4 @@
-{% set version = '0.19-3' %}
+{% set version = "0.19-4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/coda_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/coda/coda_{{ version }}.tar.gz
-  sha256: d3df1fc848bcf1af8fae13d61eeab60e99a3d4b4db384bec4326f909f502c5d6
+  sha256: 422d3cfd34797a3631e9c4812431940599c0ca4bb9937797bed07b7b1d6fe58f
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -38,11 +38,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=coda
   license: GPL (>= 2)
-  summary: Provides functions for summarizing and plotting the output from Markov Chain Monte
-    Carlo (MCMC) simulations, as well as diagnostic tests of convergence to the equilibrium
-    distribution of the Markov chain.
+  summary: Provides functions for summarizing and plotting the output from Markov Chain Monte Carlo (MCMC) simulations, as well as diagnostic tests of convergence to the equilibrium distribution of the Markov chain.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
