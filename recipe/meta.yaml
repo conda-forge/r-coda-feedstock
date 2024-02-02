@@ -1,4 +1,4 @@
-{% set version = "0.19-4" %}
+{% set version = "0.19-4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/coda_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/coda/coda_{{ version }}.tar.gz
-  sha256: 422d3cfd34797a3631e9c4812431940599c0ca4bb9937797bed07b7b1d6fe58f
+  sha256: f4b451d86fbb56ff9ade043ddd6b0944368c37d0dad12d02837750ecdc708ad6
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
