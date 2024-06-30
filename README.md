@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-coda-feedstoc
 
 Home: https://CRAN.R-project.org/package=coda
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Summary: Provides functions for summarizing and plotting the output from Markov Chain Monte Carlo (MCMC) simulations, as well as diagnostic tests of convergence to the equilibrium distribution of the Markov chain.
 
